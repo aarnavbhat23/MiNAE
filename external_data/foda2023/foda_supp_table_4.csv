@@ -1,0 +1,12 @@
+Transcription Factor,Gene Name,AUC,Cell Type in CHIP-seq Experiment,Gene Function*,Link to HCC
+ZNF786,Zinc Finger Protein 786,0.50007806401249,HEK293T,TF,None described
+KDM4A,Lysine Demethylase 4A,0.500952380952381,WA01,Histone demethylase,"Histone H3K36 Demethylation Inhibits Proliferation of Liver Cancer {Wei, 2022}"
+ZNF605,Zinc Finger Protein 605,0.501046057767369,HEK293T,TF,None described
+ZNF331,Zinc Finger Protein 331,0.501420765027322,HEK293,TF,None described
+ZNF141,Zinc Finger Protein 141,0.501764246682279,HEK293T,TF,None described
+MED,Mediator Complex Subunit 1 ,0.50192037470726,SEM,TF,"Induces Liver Cell Proliferation {Viswakarma, 2013}"
+ZNF395,Zinc Finger Protein 395,0.501951600312256,K-562,TF,"Downregulated in liver cancer {Fang, 2014}"
+ZNF423,Zinc Finger Protein 423,0.502170179547229,HEK293,TF,None described
+ZNF239,Zinc Finger Protein 239,0.502295081967213,HEK293,TF,"Upregulation Promotes metastisis in HCC {Wong, 2016}"
+POU2F1,POU Class 2 Homeobox 1,0.502825917252147,IMR-90_TERT,TF,"promotes growth and metastasis of hepatocellular carcinoma {Zhu,2017}"
+"*TF= Transcription factor, HAT= Histone acetyl-transferase",,,,,

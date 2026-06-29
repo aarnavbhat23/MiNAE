@@ -1,0 +1,61 @@
+# macOS / editor files
+.DS_Store
+*.swp
+*.swo
+*.tmp
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Jupyter / notebook checkpoints
+.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local-only visual review renders
+pdf_current_review/
+
+# Raw genomic data should stay out of GitHub.
+# Keep scripts, manifests, processed feature matrices, metrics, and figures in git.
+*.frag.tsv.bgz
+*.tsv.bgz
+*.bam
+*.bai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+
+# Common local raw-data folder names, in case they are copied into the repo later.
+Liver_Data/
+Healthy_Data/
+Cirrhosis_Data/
+Hepatitis_Data/
+liver/
+liver hg19/
+liver hg38/
+cirrhosis/
+cirrhosis hg19/
+cirrhosis hg38/
+hepatitis b/
+hepatitis b hg19/
+hepatitis b hg38/

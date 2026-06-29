@@ -1,0 +1,7 @@
+class_name,error_type,count
+Cirrhosis Control,correct,11
+Cirrhosis Control,false_positive,1
+Hepatitis B Control,correct,7
+Hepatitis B Control,false_positive,1
+Liver Cancer,correct,17
+Liver Cancer,false_negative,3

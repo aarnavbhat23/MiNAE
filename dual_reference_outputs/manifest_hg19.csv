@@ -1,0 +1,178 @@
+sample_id,file_path,class_label,class_name
+EE85755,/Users/aarnav/Downloads/hepatitis b hg19/EE85755.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85758,/Users/aarnav/Downloads/cirrhosis hg19/EE85758.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85759,/Users/aarnav/Downloads/liver hg19/EE85759.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85760,/Users/aarnav/Downloads/cirrhosis hg19/EE85760.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85761,/Users/aarnav/Downloads/liver hg19/EE85761.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85762,/Users/aarnav/Downloads/hepatitis b hg19/EE85762.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85763,/Users/aarnav/Downloads/hepatitis b hg19/EE85763.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85764,/Users/aarnav/Downloads/hepatitis b hg19/EE85764.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85765,/Users/aarnav/Downloads/liver hg19/EE85765.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85766,/Users/aarnav/Downloads/cirrhosis hg19/EE85766.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85767,/Users/aarnav/Downloads/cirrhosis hg19/EE85767.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85768,/Users/aarnav/Downloads/cirrhosis hg19/EE85768.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85769,/Users/aarnav/Downloads/liver hg19/EE85769.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85771,/Users/aarnav/Downloads/cirrhosis hg19/EE85771.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85772,/Users/aarnav/Downloads/liver hg19/EE85772.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85773,/Users/aarnav/Downloads/liver hg19/EE85773.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85774,/Users/aarnav/Downloads/liver hg19/EE85774.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85776,/Users/aarnav/Downloads/cirrhosis hg19/EE85776.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85777,/Users/aarnav/Downloads/liver hg19/EE85777.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85779,/Users/aarnav/Downloads/cirrhosis hg19/EE85779.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85780,/Users/aarnav/Downloads/cirrhosis hg19/EE85780.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85781,/Users/aarnav/Downloads/liver hg19/EE85781.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85783,/Users/aarnav/Downloads/cirrhosis hg19/EE85783.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85785,/Users/aarnav/Downloads/liver hg19/EE85785.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85786,/Users/aarnav/Downloads/liver hg19/EE85786.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85788,/Users/aarnav/Downloads/liver hg19/EE85788.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85789,/Users/aarnav/Downloads/liver hg19/EE85789.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85790,/Users/aarnav/Downloads/liver hg19/EE85790.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85792,/Users/aarnav/Downloads/cirrhosis hg19/EE85792.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85793,/Users/aarnav/Downloads/liver hg19/EE85793.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85794,/Users/aarnav/Downloads/liver hg19/EE85794.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85796,/Users/aarnav/Downloads/cirrhosis hg19/EE85796.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85797,/Users/aarnav/Downloads/cirrhosis hg19/EE85797.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85798,/Users/aarnav/Downloads/liver hg19/EE85798.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85799,/Users/aarnav/Downloads/liver hg19/EE85799.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85800,/Users/aarnav/Downloads/cirrhosis hg19/EE85800.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85802,/Users/aarnav/Downloads/liver hg19/EE85802.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85805,/Users/aarnav/Downloads/liver hg19/EE85805.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85806,/Users/aarnav/Downloads/cirrhosis hg19/EE85806.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85807,/Users/aarnav/Downloads/liver hg19/EE85807.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85808,/Users/aarnav/Downloads/cirrhosis hg19/EE85808.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85809,/Users/aarnav/Downloads/cirrhosis hg19/EE85809.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85810,/Users/aarnav/Downloads/liver hg19/EE85810.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85811,/Users/aarnav/Downloads/cirrhosis hg19/EE85811.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85812,/Users/aarnav/Downloads/cirrhosis hg19/EE85812.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85813,/Users/aarnav/Downloads/liver hg19/EE85813.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85814,/Users/aarnav/Downloads/liver hg19/EE85814.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85817,/Users/aarnav/Downloads/cirrhosis hg19/EE85817.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85818,/Users/aarnav/Downloads/cirrhosis hg19/EE85818.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85821,/Users/aarnav/Downloads/liver hg19/EE85821.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85822,/Users/aarnav/Downloads/cirrhosis hg19/EE85822.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85823,/Users/aarnav/Downloads/liver hg19/EE85823.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85825,/Users/aarnav/Downloads/cirrhosis hg19/EE85825.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85826,/Users/aarnav/Downloads/cirrhosis hg19/EE85826.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85827,/Users/aarnav/Downloads/liver hg19/EE85827.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85828,/Users/aarnav/Downloads/cirrhosis hg19/EE85828.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85829,/Users/aarnav/Downloads/cirrhosis hg19/EE85829.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85831,/Users/aarnav/Downloads/liver hg19/EE85831.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85832,/Users/aarnav/Downloads/liver hg19/EE85832.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85833,/Users/aarnav/Downloads/cirrhosis hg19/EE85833.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85834,/Users/aarnav/Downloads/cirrhosis hg19/EE85834.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85835,/Users/aarnav/Downloads/liver hg19/EE85835.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85836,/Users/aarnav/Downloads/cirrhosis hg19/EE85836.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85837,/Users/aarnav/Downloads/cirrhosis hg19/EE85837.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85838,/Users/aarnav/Downloads/cirrhosis hg19/EE85838.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85839,/Users/aarnav/Downloads/liver hg19/EE85839.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85840,/Users/aarnav/Downloads/cirrhosis hg19/EE85840.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85841,/Users/aarnav/Downloads/cirrhosis hg19/EE85841.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85843,/Users/aarnav/Downloads/liver hg19/EE85843.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85844,/Users/aarnav/Downloads/cirrhosis hg19/EE85844.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85845,/Users/aarnav/Downloads/liver hg19/EE85845.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85846,/Users/aarnav/Downloads/liver hg19/EE85846.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85847,/Users/aarnav/Downloads/liver hg19/EE85847.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85848,/Users/aarnav/Downloads/cirrhosis hg19/EE85848.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85849,/Users/aarnav/Downloads/liver hg19/EE85849.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85851,/Users/aarnav/Downloads/liver hg19/EE85851.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85853,/Users/aarnav/Downloads/cirrhosis hg19/EE85853.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85855,/Users/aarnav/Downloads/cirrhosis hg19/EE85855.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85856,/Users/aarnav/Downloads/liver hg19/EE85856.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85857,/Users/aarnav/Downloads/liver hg19/EE85857.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85858,/Users/aarnav/Downloads/liver hg19/EE85858.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85859,/Users/aarnav/Downloads/cirrhosis hg19/EE85859.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85862,/Users/aarnav/Downloads/liver hg19/EE85862.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85863,/Users/aarnav/Downloads/liver hg19/EE85863.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85864,/Users/aarnav/Downloads/liver hg19/EE85864.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85865,/Users/aarnav/Downloads/cirrhosis hg19/EE85865.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85866,/Users/aarnav/Downloads/cirrhosis hg19/EE85866.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85867,/Users/aarnav/Downloads/liver hg19/EE85867.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85868,/Users/aarnav/Downloads/cirrhosis hg19/EE85868.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85869,/Users/aarnav/Downloads/liver hg19/EE85869.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85870,/Users/aarnav/Downloads/liver hg19/EE85870.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85871,/Users/aarnav/Downloads/cirrhosis hg19/EE85871.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85872,/Users/aarnav/Downloads/liver hg19/EE85872.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85873,/Users/aarnav/Downloads/cirrhosis hg19/EE85873.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85874,/Users/aarnav/Downloads/cirrhosis hg19/EE85874.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85875,/Users/aarnav/Downloads/cirrhosis hg19/EE85875.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85876,/Users/aarnav/Downloads/cirrhosis hg19/EE85876.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85877,/Users/aarnav/Downloads/cirrhosis hg19/EE85877.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85879,/Users/aarnav/Downloads/cirrhosis hg19/EE85879.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85880,/Users/aarnav/Downloads/liver hg19/EE85880.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85881,/Users/aarnav/Downloads/liver hg19/EE85881.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85882,/Users/aarnav/Downloads/cirrhosis hg19/EE85882.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85883,/Users/aarnav/Downloads/liver hg19/EE85883.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85884,/Users/aarnav/Downloads/cirrhosis hg19/EE85884.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85885,/Users/aarnav/Downloads/liver hg19/EE85885.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85886,/Users/aarnav/Downloads/cirrhosis hg19/EE85886.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85887,/Users/aarnav/Downloads/cirrhosis hg19/EE85887.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85888,/Users/aarnav/Downloads/liver hg19/EE85888.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85890,/Users/aarnav/Downloads/cirrhosis hg19/EE85890.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85891,/Users/aarnav/Downloads/liver hg19/EE85891.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85892,/Users/aarnav/Downloads/liver hg19/EE85892.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85893,/Users/aarnav/Downloads/liver hg19/EE85893.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85895,/Users/aarnav/Downloads/cirrhosis hg19/EE85895.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85896,/Users/aarnav/Downloads/cirrhosis hg19/EE85896.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85897,/Users/aarnav/Downloads/cirrhosis hg19/EE85897.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85899,/Users/aarnav/Downloads/liver hg19/EE85899.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85900,/Users/aarnav/Downloads/liver hg19/EE85900.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85901,/Users/aarnav/Downloads/liver hg19/EE85901.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85902,/Users/aarnav/Downloads/cirrhosis hg19/EE85902.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85903,/Users/aarnav/Downloads/liver hg19/EE85903.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85906,/Users/aarnav/Downloads/cirrhosis hg19/EE85906.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85907,/Users/aarnav/Downloads/liver hg19/EE85907.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85911,/Users/aarnav/Downloads/liver hg19/EE85911.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85912,/Users/aarnav/Downloads/cirrhosis hg19/EE85912.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85913,/Users/aarnav/Downloads/cirrhosis hg19/EE85913.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85915,/Users/aarnav/Downloads/cirrhosis hg19/EE85915.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85916,/Users/aarnav/Downloads/liver hg19/EE85916.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85917,/Users/aarnav/Downloads/cirrhosis hg19/EE85917.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85919,/Users/aarnav/Downloads/cirrhosis hg19/EE85919.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85920,/Users/aarnav/Downloads/cirrhosis hg19/EE85920.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85921,/Users/aarnav/Downloads/liver hg19/EE85921.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85922,/Users/aarnav/Downloads/cirrhosis hg19/EE85922.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85923,/Users/aarnav/Downloads/cirrhosis hg19/EE85923.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85924,/Users/aarnav/Downloads/cirrhosis hg19/EE85924.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85925,/Users/aarnav/Downloads/liver hg19/EE85925.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85926,/Users/aarnav/Downloads/cirrhosis hg19/EE85926.hg19.frag.tsv.bgz,0,Cirrhosis Control
+EE85927,/Users/aarnav/Downloads/liver hg19/EE85927.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85930,/Users/aarnav/Downloads/hepatitis b hg19/EE85930.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85933,/Users/aarnav/Downloads/hepatitis b hg19/EE85933.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85935,/Users/aarnav/Downloads/liver hg19/EE85935.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85938,/Users/aarnav/Downloads/liver hg19/EE85938.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85939,/Users/aarnav/Downloads/liver hg19/EE85939.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85940,/Users/aarnav/Downloads/hepatitis b hg19/EE85940.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85942,/Users/aarnav/Downloads/hepatitis b hg19/EE85942.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85943,/Users/aarnav/Downloads/liver hg19/EE85943.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85944,/Users/aarnav/Downloads/hepatitis b hg19/EE85944.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85945,/Users/aarnav/Downloads/hepatitis b hg19/EE85945.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85946,/Users/aarnav/Downloads/liver hg19/EE85946.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85947,/Users/aarnav/Downloads/liver hg19/EE85947.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85948,/Users/aarnav/Downloads/hepatitis b hg19/EE85948.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85949,/Users/aarnav/Downloads/liver hg19/EE85949.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85950,/Users/aarnav/Downloads/hepatitis b hg19/EE85950.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85952,/Users/aarnav/Downloads/hepatitis b hg19/EE85952.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85953,/Users/aarnav/Downloads/liver hg19/EE85953.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85957,/Users/aarnav/Downloads/hepatitis b hg19/EE85957.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85960,/Users/aarnav/Downloads/hepatitis b hg19/EE85960.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85961,/Users/aarnav/Downloads/liver hg19/EE85961.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85964,/Users/aarnav/Downloads/liver hg19/EE85964.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85965,/Users/aarnav/Downloads/liver hg19/EE85965.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85966,/Users/aarnav/Downloads/hepatitis b hg19/EE85966.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85967,/Users/aarnav/Downloads/hepatitis b hg19/EE85967.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85968,/Users/aarnav/Downloads/liver hg19/EE85968.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85969,/Users/aarnav/Downloads/liver hg19/EE85969.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85972,/Users/aarnav/Downloads/hepatitis b hg19/EE85972.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85973,/Users/aarnav/Downloads/liver hg19/EE85973.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85974,/Users/aarnav/Downloads/liver hg19/EE85974.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85975,/Users/aarnav/Downloads/hepatitis b hg19/EE85975.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85978,/Users/aarnav/Downloads/liver hg19/EE85978.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85981,/Users/aarnav/Downloads/hepatitis b hg19/EE85981.hg19.frag.tsv.bgz,0,Hepatitis B Control
+EE85982,/Users/aarnav/Downloads/liver hg19/EE85982.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85983,/Users/aarnav/Downloads/liver hg19/EE85983.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85990,/Users/aarnav/Downloads/liver hg19/EE85990.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85991,/Users/aarnav/Downloads/liver hg19/EE85991.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85992,/Users/aarnav/Downloads/liver hg19/EE85992.hg19.frag.tsv.bgz,1,Liver Cancer
+EE85997,/Users/aarnav/Downloads/liver hg19/EE85997.hg19.frag.tsv.bgz,1,Liver Cancer
+EE86000,/Users/aarnav/Downloads/liver hg19/EE86000.hg19.frag.tsv.bgz,1,Liver Cancer
+EE86002,/Users/aarnav/Downloads/liver hg19/EE86002.hg19.frag.tsv.bgz,1,Liver Cancer

@@ -1,0 +1,28 @@
+{
+  "annapragada": {
+    "n_total_with_fragment_lengths": 553,
+    "n_discovery": 362,
+    "n_validation": 191,
+    "validation_class_counts": {
+      "Non-Cirrhotic Controls": 106,
+      "Advanced Fibrosis/Cirrhosis": 85
+    },
+    "discovery_class_counts": {
+      "Non-Cirrhotic Controls": 291,
+      "Advanced Fibrosis/Cirrhosis": 71
+    },
+    "n_source_holdouts": 1,
+    "permutation_p_value": 0.0033222591362126247
+  },
+  "foda": {
+    "n_foda_samples": 501,
+    "patient_type_counts": {
+      "Non-cancer": 293,
+      "Cirrhosis": 78,
+      "HCC": 75,
+      "HCV": 29,
+      "HBV": 26
+    },
+    "benchmark_rows": 3
+  }
+}

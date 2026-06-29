@@ -1,0 +1,2 @@
+Strategy,Split,Model,Threshold,ROC_AUC,PR_AUC,Accuracy,Balanced_Accuracy,Sensitivity,Specificity,Precision,F1
+strategy_2_hg19_global,final_validation,Linear SVM k40,0.5199999999999999,0.8375,0.8359301255705431,0.725,0.725,0.7,0.7499999999999626,0.7368421052631579,0.717948717948718

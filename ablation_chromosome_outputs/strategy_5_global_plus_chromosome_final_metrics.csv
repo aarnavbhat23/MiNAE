@@ -1,0 +1,2 @@
+Strategy,Split,Model,Threshold,ROC_AUC,PR_AUC,Accuracy,Balanced_Accuracy,Sensitivity,Specificity,Precision,F1
+strategy_5_global_plus_chromosome,final_validation,Linear SVM k70,0.5499999999999999,0.86875,0.8551623797260917,0.725,0.725,0.6,0.8499999999999576,0.8,0.6857142857142857

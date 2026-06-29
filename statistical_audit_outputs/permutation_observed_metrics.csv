@@ -1,0 +1,2 @@
+Experiment,ROC_AUC,Accuracy,Balanced_Accuracy,Sensitivity,Specificity,Precision,Permutation_P_Value
+Observed labels,0.925,0.875,0.875,0.85,0.8999999999999551,0.8947368421052632,0.001996007984031936

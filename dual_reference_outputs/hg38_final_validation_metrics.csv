@@ -1,0 +1,2 @@
+Reference,Split,Model,Threshold,ROC_AUC,Accuracy,Balanced_Accuracy,Sensitivity,Specificity,Precision,F1
+hg38,final_validation,L2 Logistic,0.5299999999999999,0.8375,0.75,0.75,0.65,0.8499999999999576,0.8125,0.7222222222222222

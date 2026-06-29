@@ -1,0 +1,2 @@
+Reference,Split,Model,Threshold,ROC_AUC,Accuracy,Balanced_Accuracy,Sensitivity,Specificity,Precision,F1
+hg19,final_validation,Extra Trees,0.585,0.6925,0.7,0.7,0.6,0.7999999999999601,0.75,0.6666666666666666
