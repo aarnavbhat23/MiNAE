@@ -7,7 +7,7 @@ Files required by the paper:
 - `main.tex`
 - `references.bib`
 - `minae_workflow.png`
-- `final_validation_roc.png`
+- `final_validation_roc_pr.png`
 - `repeated_validation_boxplots.png`
 - `permutation_test.png`
 

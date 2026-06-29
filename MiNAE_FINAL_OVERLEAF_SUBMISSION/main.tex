@@ -17,7 +17,7 @@
 \maketitle
 
 \begin{abstract}
-Early detection of hepatocellular carcinoma (HCC) remains difficult in high-risk liver disease populations, where ultrasound and alpha-fetoprotein surveillance have imperfect sensitivity. This study evaluates whether cell-free DNA (cfDNA) fragment-size architecture can separate HCC from non-cancer chronic liver disease controls using only public FinaleDB fragment-coordinate files. The proposed MiNAE pipeline converts fragment coordinates into normalized size-distribution features, compares hg38 and hg19 feature spaces, tests dual-reference and chromosome-targeted feature strategies, and applies patient-level train, test, and final validation splits so that different genome-build alignments of the same sample cannot leak across partitions. In a locked held-out validation split of 40 patients, a dual-reference linear support vector machine achieved ROC-AUC 0.900, accuracy 0.875, sensitivity 0.850, specificity 0.900, and precision 0.895 for HCC versus cirrhosis and hepatitis B controls. Across 100 repeated held-out validations, the simpler hg38 global model was most stable, with mean ROC-AUC 0.889 and mean accuracy 0.816. An external liver-disease fragment-length audit achieved ROC-AUC 0.891, and a residualized fragmentomics analysis retained ROC-AUC 0.799 after adjustment for measured technical covariates. However, technical covariates alone were also highly predictive, indicating substantial batch or cohort structure in public cfDNA data. MiNAE therefore supports cfDNA fragmentomics as a measurable HCC-associated signal while presenting the result as a retrospective validation and auditing framework rather than a clinically validated diagnostic.
+Early detection of hepatocellular carcinoma (HCC) remains difficult in high-risk liver disease populations, where ultrasound and alpha-fetoprotein surveillance have imperfect sensitivity. This study evaluates whether cell-free DNA (cfDNA) fragment-size architecture can separate HCC from non-cancer chronic liver disease controls using only public FinaleDB fragment-coordinate files. The proposed MiNAE pipeline converts fragment coordinates into normalized size-distribution features, compares hg38 and hg19 feature spaces, tests dual-reference and chromosome-targeted feature strategies, and applies patient-level train, test, and final validation splits so that different genome-build alignments of the same sample cannot leak across partitions. In a locked held-out validation split of 40 patients, a dual-reference linear support vector machine achieved ROC-AUC 0.900, PR-AUC 0.873, accuracy 0.875, sensitivity 0.850, specificity 0.900, and precision 0.895 for HCC versus cirrhosis and hepatitis B controls. Across 100 repeated held-out validations, the simpler hg38 global model was most stable, with mean ROC-AUC 0.889, mean PR-AUC 0.912, and mean accuracy 0.816. An external liver-disease fragment-length audit achieved ROC-AUC 0.891, and a residualized fragmentomics analysis retained ROC-AUC 0.799 after adjustment for measured technical covariates. However, technical covariates alone were also highly predictive, indicating substantial batch or cohort structure in public cfDNA data. MiNAE therefore supports cfDNA fragmentomics as a measurable HCC-associated signal while presenting the result as a retrospective validation and auditing framework rather than a clinically validated diagnostic.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -42,11 +42,11 @@ The main contributions are:
 The claim is deliberately bounded. MiNAE is not presented as a new clinical diagnostic test, and the experiments do not replace prospective clinical validation. The contribution is a transparent computational validation study that tests whether public coordinate-level cfDNA fragmentomics can recover a biologically plausible HCC signal under leakage-aware validation.
 
 \section{Related Work}
-cfDNA fragmentation has a biological basis in chromatin structure and nuclease-mediated DNA cleavage. Snyder et al. showed that cfDNA contains nucleosome-footprint information that can inform tissue of origin \cite{snyder2016cellfree}. Cancer-derived cfDNA is often shorter than non-tumor cfDNA, motivating the use of short-to-long fragment ratios and genome-wide fragmentation patterns as cancer biomarkers \cite{mouliere2011fragmentation,cristiano2019genomewide}.
+cfDNA fragmentation has a biological basis in chromatin structure and nuclease-mediated DNA cleavage. Early work showed that plasma DNA fragmentation is non-random and reflects epigenomic organization \cite{ivanov2015nonrandom}. Snyder et al. showed that cfDNA contains nucleosome-footprint information that can inform tissue of origin \cite{snyder2016cellfree}. Cancer-derived cfDNA is often shorter than non-tumor cfDNA, motivating the use of short-to-long fragment ratios and genome-wide fragmentation patterns as cancer biomarkers \cite{mouliere2011fragmentation,cristiano2019genomewide}.
 
-The DELFI framework demonstrated that genome-wide cfDNA fragmentation features from shallow whole-genome sequencing can classify cancer states \cite{cristiano2019genomewide}. Foda et al. later evaluated whole-genome cfDNA fragmentomes for liver cancer detection across average-risk and high-risk groups, reporting strong sensitivity and specificity for HCC detection \cite{foda2023detecting}. These studies establish the biological and clinical relevance of fragmentomics for HCC.
+The DELFI framework demonstrated that genome-wide cfDNA fragmentation features from shallow whole-genome sequencing can classify cancer states \cite{cristiano2019genomewide}. HCC-specific plasma DNA studies have also reported disease-associated fragment-length changes, including lengthening and shortening patterns related to tumor fraction and copy-number aberrations \cite{jiang2015lengthening}. Foda et al. later evaluated whole-genome cfDNA fragmentomes for liver cancer detection across average-risk and high-risk groups, reporting strong sensitivity and specificity for HCC detection \cite{foda2023detecting}. Other fragmentomic representations, including preferred end coordinates in HCC, orientation-aware fragmentation, and transcription-factor footprinting from cfDNA, show that fragment structure can encode disease and tissue-state information beyond simple size distributions \cite{jiang2018preferred,sun2019orientation,ulz2019inference}. These studies establish the biological and clinical relevance of fragmentomics for HCC while also showing that MiNAE is related to a broader fragmentomics literature.
 
-Public reproducibility remains challenging because raw cfDNA sequencing datasets are often controlled-access. FinaleDB addresses this by providing uniformly processed, de-identified fragment-coordinate datasets across multiple diseases and genome builds \cite{zheng2021finaledb}. Additional public fragmentomics resources, including the Annapragada et al. liver disease fragmentome repository, make it possible to evaluate external fragment-length replication without downloading raw sequencing files \cite{annapragada2026cirrhosis}. MiNAE uses these public data substrates to focus on validation practice, feature ablation, and technical auditing rather than clinical deployment.
+Public reproducibility remains challenging because raw cfDNA sequencing datasets are often controlled-access. FinaleDB addresses this by providing uniformly processed, de-identified fragment-coordinate datasets across multiple diseases and genome builds \cite{zheng2021finaledb}. Recent standardization work has also shown that library preparation and preprocessing choices can bias fragmentomic feature quantification, making technical audits important for public-data studies \cite{wang2025standardized}. Additional public fragmentomics resources, including the Annapragada et al. liver disease fragmentome repository, make it possible to evaluate external fragment-length replication without downloading raw sequencing files \cite{annapragada2026cirrhosis}. MiNAE uses these public data substrates to focus on validation practice, feature ablation, and technical auditing rather than clinical deployment.
 
 This study differs from prior HCC fragmentomics work in three practical ways. First, it uses only public fragment-coordinate files rather than raw protected sequence data. Second, it evaluates the same patients across hg19 and hg38 without allowing genome-build duplication to inflate the sample size. Third, it reports negative-control and repeated-validation experiments, which are especially important when model selection is performed on small biomedical datasets \cite{varma2006bias,collins2015tripod}.
 
@@ -171,34 +171,34 @@ This test evaluates whether the model exceeds a random-label null distribution, 
 
 \section{Results}
 \subsection{Single Held-Out Validation and Ablation}
-Table \ref{tab:ablation} shows the final validation performance for five feature strategies. The strongest single split result came from dual-reference global fusion, which achieved ROC-AUC 0.900, accuracy 0.875, sensitivity 0.850, specificity 0.900, precision 0.895, and F1-score 0.872. Chromosome-targeted fusion achieved similar accuracy and specificity with ROC-AUC 0.890. Combining global and chromosome-targeted features reduced performance, suggesting that increasing feature dimensionality can worsen overfitting in this small cohort.
+Table \ref{tab:ablation} shows the final validation performance for five feature strategies. The strongest single split result came from dual-reference global fusion, which achieved ROC-AUC 0.900, PR-AUC 0.873, accuracy 0.875, sensitivity 0.850, specificity 0.900, precision 0.895, and F1-score 0.872. Chromosome-targeted fusion achieved similar accuracy and specificity with ROC-AUC 0.890. Combining global and chromosome-targeted features reduced performance, suggesting that increasing feature dimensionality can worsen overfitting in this small cohort.
 
 \begin{table*}[t]
 \centering
 \caption{Locked final-validation ablation results.}
 \label{tab:ablation}
-\begin{tabular}{lrrrrrr}
+\begin{tabular}{lrrrrrrr}
 \toprule
-Feature strategy & ROC-AUC & Accuracy & Sensitivity & Specificity & Precision & F1 \\
+Feature strategy & ROC-AUC & PR-AUC & Accuracy & Sens. & Spec. & Prec. & F1 \\
 \midrule
-hg38 global & 0.828 & 0.750 & 0.750 & 0.750 & 0.750 & 0.750 \\
-hg19 global & 0.838 & 0.725 & 0.700 & 0.750 & 0.737 & 0.718 \\
-Dual-reference global fusion & 0.900 & 0.875 & 0.850 & 0.900 & 0.895 & 0.872 \\
-Chromosome-targeted fusion & 0.890 & 0.875 & 0.850 & 0.900 & 0.895 & 0.872 \\
-Global plus chromosome fusion & 0.869 & 0.725 & 0.600 & 0.850 & 0.800 & 0.686 \\
+hg38 global & 0.828 & 0.830 & 0.750 & 0.750 & 0.750 & 0.750 & 0.750 \\
+hg19 global & 0.838 & 0.836 & 0.725 & 0.700 & 0.750 & 0.737 & 0.718 \\
+Dual-reference global fusion & 0.900 & 0.873 & 0.875 & 0.850 & 0.900 & 0.895 & 0.872 \\
+Chromosome-targeted fusion & 0.890 & 0.856 & 0.875 & 0.850 & 0.900 & 0.895 & 0.872 \\
+Global plus chromosome fusion & 0.869 & 0.855 & 0.725 & 0.600 & 0.850 & 0.800 & 0.686 \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\columnwidth]{final_validation_roc.png}
-\caption{Final validation ROC curve for the dual-reference global fusion model. The selected linear SVM achieved ROC-AUC 0.900 on the locked final validation split.}
+\includegraphics[width=\columnwidth]{final_validation_roc_pr.png}
+\caption{Final validation ROC and precision-recall curves for the dual-reference global fusion model. The selected linear SVM achieved ROC-AUC 0.900 and PR-AUC 0.873 on the locked final validation split.}
 \label{fig:roc}
 \end{figure}
 
 \subsection{Repeated Held-Out Validation}
-Table \ref{tab:repeated} reports performance across 100 repeated validations. This experiment changed the interpretation of the single-split results. Although dual-reference fusion performed best in the locked split, hg38 global fragmentomics was the most stable strategy across repeated random splits, with mean ROC-AUC 0.889 and mean accuracy 0.816. This suggests that standard global fragment-size architecture contains robust signal, while more complex feature combinations may be more split-sensitive.
+Table \ref{tab:repeated} reports performance across 100 repeated validations. This experiment changed the interpretation of the single-split results. Although dual-reference fusion performed best in the locked split, hg38 global fragmentomics was the most stable strategy across repeated random splits, with mean ROC-AUC 0.889, mean PR-AUC 0.912, and mean accuracy 0.816. This suggests that standard global fragment-size architecture contains robust signal, while more complex feature combinations may be more split-sensitive.
 
 \begin{table*}[t]
 \centering
@@ -206,13 +206,13 @@ Table \ref{tab:repeated} reports performance across 100 repeated validations. Th
 \label{tab:repeated}
 \begin{tabular}{lrrrrrr}
 \toprule
-Strategy & Mean ROC-AUC & SD & Mean Acc. & Mean Sens. & Mean Spec. & Mean Prec. \\
+Strategy & Mean ROC-AUC & Mean PR-AUC & Mean Acc. & Mean Sens. & Mean Spec. & Mean Prec. \\
 \midrule
-hg38 global & 0.889 & 0.049 & 0.816 & 0.762 & 0.869 & 0.873 \\
-hg19 global & 0.886 & 0.048 & 0.809 & 0.755 & 0.863 & 0.864 \\
-Chromosome fusion & 0.872 & 0.052 & 0.761 & 0.727 & 0.795 & 0.806 \\
-Dual global fusion & 0.868 & 0.050 & 0.766 & 0.737 & 0.795 & 0.804 \\
-Global plus chromosome & 0.847 & 0.057 & 0.751 & 0.698 & 0.805 & 0.798 \\
+hg38 global & 0.889 & 0.912 & 0.816 & 0.762 & 0.869 & 0.873 \\
+hg19 global & 0.886 & 0.908 & 0.809 & 0.755 & 0.863 & 0.864 \\
+Chromosome fusion & 0.872 & 0.892 & 0.761 & 0.727 & 0.795 & 0.806 \\
+Dual global fusion & 0.868 & 0.888 & 0.766 & 0.737 & 0.795 & 0.804 \\
+Global plus chromosome & 0.847 & 0.864 & 0.751 & 0.698 & 0.805 & 0.798 \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -255,24 +255,24 @@ False negatives & 3 & Missed HCC cases \\
 \end{figure}
 
 \subsection{External Replication and Benchmark}
-The Annapragada external fragment-length audit trained on the repository Discovery split and evaluated on its Validation split. Fragmentomics alone achieved ROC-AUC 0.891, accuracy 0.822, sensitivity 0.729, specificity 0.896, and permutation p = 0.003 for advanced fibrosis/cirrhosis versus non-cirrhotic controls. Bootstrap confidence intervals for fragmentomics ROC-AUC were 0.842 to 0.935. However, technical covariates alone achieved ROC-AUC 0.998, indicating that measured sequencing or cohort variables can nearly separate the external labels without fragment-size biology. To test whether fragment-length signal remained after measured technical effects were removed, fragment-length features were residualized against the available technical covariates before modeling. The residualized fragmentomics model retained ROC-AUC 0.799. This lower but above-chance result supports the presence of remaining fragmentomic information, while also showing that unadjusted external performance substantially overestimates biology-specific signal.
+The Annapragada external fragment-length audit trained on the repository Discovery split and evaluated on its Validation split. Fragmentomics alone achieved ROC-AUC 0.891, PR-AUC 0.894, accuracy 0.822, sensitivity 0.729, specificity 0.896, and permutation p = 0.003 for advanced fibrosis/cirrhosis versus non-cirrhotic controls. Bootstrap confidence intervals for fragmentomics ROC-AUC were 0.842 to 0.935. However, technical covariates alone achieved ROC-AUC 0.998, indicating that measured sequencing or cohort variables can nearly separate the external labels without fragment-size biology. To test whether fragment-length signal remained after measured technical effects were removed, fragment-length features were residualized against the available technical covariates before modeling. The residualized fragmentomics model retained ROC-AUC 0.799 and PR-AUC 0.801. This lower but above-chance result supports the presence of remaining fragmentomic information, while also showing that unadjusted external performance substantially overestimates biology-specific signal.
 
-Source-level holdout was more conservative. The only held-out source with enough samples from both classes, INCAP, produced ROC-AUC 0.699, suggesting that model performance weakens under stricter cohort-shift conditions. Therefore, the external audit should be read as evidence for partial fragmentomic replication under confounding pressure, not as independent clinical validation. In the Foda supplementary benchmark, the published DELFI-surveillance score achieved ROC-AUC 0.900 for HCC versus cirrhosis/HBV/HCV controls and ROC-AUC 0.889 for HCC versus cirrhosis alone. These results contextualize the clinical HCC task but are not MiNAE predictions.
+Source-level holdout was more conservative. The only held-out source with enough samples from both classes, INCAP, produced ROC-AUC 0.699, suggesting that model performance weakens under stricter cohort-shift conditions. Therefore, the external audit should be read as evidence for partial fragmentomic replication under confounding pressure, not as independent clinical validation. In the Foda supplementary benchmark, the published DELFI-surveillance score achieved ROC-AUC 0.900 and PR-AUC 0.850 for HCC versus cirrhosis/HBV/HCV controls, and ROC-AUC 0.889 and PR-AUC 0.879 for HCC versus cirrhosis alone. These results contextualize the clinical HCC task but are not MiNAE predictions.
 
 \begin{table*}[t]
 \centering
 \caption{External replication and benchmark audit. Annapragada rows use external fragment-length tables; Foda rows use published DELFI-surveillance scores.}
 \label{tab:external}
-\begin{tabular}{lrrrrr}
+\begin{tabular}{lrrrrrr}
 \toprule
-External analysis & N & ROC-AUC & Accuracy & Sensitivity & Specificity \\
+External analysis & N & ROC-AUC & PR-AUC & Acc. & Sens. & Spec. \\
 \midrule
-Annapragada fragmentomics, Discovery-to-Validation & 191 & 0.891 & 0.822 & 0.729 & 0.896 \\
-Annapragada technical covariates only & 191 & 0.998 & 0.921 & 0.835 & 0.991 \\
-Annapragada residualized fragmentomics & 191 & 0.799 & 0.733 & 0.624 & 0.821 \\
-Annapragada held-out INCAP source & 66 & 0.699 & 0.667 & 0.771 & 0.389 \\
-Foda DELFI score, HCC vs cirrhosis/HBV/HCV & 208 & 0.900 & 0.851 & 0.787 & 0.887 \\
-Foda DELFI score, HCC vs cirrhosis only & 153 & 0.889 & 0.830 & 0.787 & 0.872 \\
+Annapragada fragmentomics, Discovery-to-Validation & 191 & 0.891 & 0.894 & 0.822 & 0.729 & 0.896 \\
+Annapragada technical covariates only & 191 & 0.998 & 0.997 & 0.921 & 0.835 & 0.991 \\
+Annapragada residualized fragmentomics & 191 & 0.799 & 0.801 & 0.733 & 0.624 & 0.821 \\
+Annapragada held-out INCAP source & 66 & 0.699 & 0.887 & 0.667 & 0.771 & 0.389 \\
+Foda DELFI score, HCC vs cirrhosis/HBV/HCV & 208 & 0.900 & 0.850 & 0.851 & 0.787 & 0.887 \\
+Foda DELFI score, HCC vs cirrhosis only & 153 & 0.889 & 0.879 & 0.830 & 0.787 & 0.872 \\
 \bottomrule
 \end{tabular}
 \end{table*}
